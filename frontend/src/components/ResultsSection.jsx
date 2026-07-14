@@ -24,7 +24,7 @@ function ValueConstructsCard({ data }) {
   ].join('\n')
 
   return (
-    <div className="result-card">
+    <div className="result-card result-card--constructs">
       <div className="result-card__header">
         <h3>Value Constructs</h3>
         <CopyButton textToCopy={text} />
@@ -70,7 +70,7 @@ function AchievementsCard({ data }) {
   const text = data.map((item) => `${item.title}: ${item.description}`).join('\n\n')
 
   return (
-    <div className="result-card">
+    <div className="result-card result-card--achievements">
       <div className="result-card__header">
         <h3>Achievements</h3>
         <CopyButton textToCopy={text} />
@@ -94,7 +94,7 @@ function SuggestionsCard({ data }) {
   const text = data.map((item, i) => `${i + 1}. ${item}`).join('\n')
 
   return (
-    <div className="result-card">
+    <div className="result-card result-card--suggestions">
       <div className="result-card__header">
         <h3>Suggestions</h3>
         <CopyButton textToCopy={text} />

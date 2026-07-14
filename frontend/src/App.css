@@ -408,8 +408,20 @@ body {
   border-radius: 16px;
   padding: 24px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-top: 3px solid transparent;
 }
 
+.result-card--constructs {
+  border-top-color: #e07a7a;
+}
+
+.result-card--achievements {
+  border-top-color: #6b8fd4;
+}
+
+.result-card--suggestions {
+  border-top-color: #e0b94a;
+}
 .result-card__header {
   display: flex;
   justify-content: space-between;
